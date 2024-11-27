@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px 30px;
+            text-align: center;
+            width: 350px;
+        }
+
+        .container h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .container form {
+            margin: 10px 0;
+        }
+
+        .container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .container input[type="submit"]:active {
+            background-color: #3e8e41;
+        }
+
+        .container legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>
+                <h1>Welcome to Employee Management</h1>
+            </legend>
+            <form action="add">
+                <input type="submit" value="Add Employee">
+            </form>
+            <form action="display">
+                <input type="submit" value="Display Employees">
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

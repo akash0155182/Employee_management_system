@@ -1,4 +1,4 @@
-package com.uniquedeveloper.registration;
+ package com.uniquedeveloper.registration;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -24,3 +24,4 @@ public class Logout extends HttpServlet {
 
 	
 }
+ 

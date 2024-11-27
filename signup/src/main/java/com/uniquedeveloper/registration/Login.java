@@ -18,6 +18,7 @@ import javax.servlet.http.HttpSession;
  * Servlet implementation class Login
  */
 @WebServlet("/login")
+
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -27,8 +28,8 @@ public class Login extends HttpServlet {
 		HttpSession session = request.getSession();
 		RequestDispatcher dispatcher = null;
 		try {
-			 String u="root";
-	     	 String p="1234";
+			String u="root";
+	     	String p="1234";
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/usid",u,p);
 			PreparedStatement pst =con.prepareStatement("select * from users where uemail = ? and upwd = ?");
